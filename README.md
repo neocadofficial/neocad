@@ -8,7 +8,8 @@ ready to push straight into a GitHub repo for GitHub Pages hosting.
 
 ```
 index.html          Home
-shop.html            Product page — the bushing set
+shop.html            Compact product catalog
+transmission-mount-bushing.html Full bushing product details
 pricing.html         Rate tables + the live quote estimator
 equipment.html       Printer fleet + scanner + materials
 blog.html            Blog index
@@ -22,10 +23,10 @@ assets/img/          Logo + product photos
 
 Copy this folder into the matching locations in your existing repository.
 Merge folders and keep your existing `assets/js/main.js`, which was not supplied.
-The six HTML pages, stylesheet, supplied images, and new pricing script are included.
+The seven HTML pages, stylesheet, supplied images, and new pricing script are included.
 This is a drop-in update, not a complete standalone site archive.
 
-The index footer is now shared across the six pages, with working
+The index footer is now shared across the seven pages, with working
 email and Instagram links. Header logos now include bold NeoCAD text.
 Equipment uses compact, distinct stylized SVG icons (not model-specific photos).
 The homepage now features the Fusion design and S13 cupholder preview; the
@@ -39,7 +40,7 @@ contingency on that sum, plus hands-on labor; apply $10 minimum, add shipping.
 Dryer time and tax remain part of the confirmed quote, not this estimator.
 
 Before publishing, confirm the existing fitment years/chassis labels and
-3–5 business day lead time on shop.html. The blog post now shares the updated header and footer with correct relative links.
+3–5 business day lead time on transmission-mount-bushing.html. The blog post now shares the updated header and footer with correct relative links.
 Preview with the repository's original main.js before deploying to check
 navigation, search, gallery behavior, and pricing integration.
 
@@ -52,7 +53,7 @@ navigation, search, gallery behavior, and pricing integration.
 
 ## Adding a new product later
 
-Same idea — duplicate `shop.html`, add a nav/footer link if it should be
+Same idea — duplicate `transmission-mount-bushing.html`, add a nav/footer link if it should be
 in the main nav, add it to `SEARCH_INDEX`.
 
 ## Previewing locally
@@ -81,3 +82,8 @@ then visit `http://localhost:8000`.
 All the links in this project use relative paths, so it works the same
 whether it's served from a domain root or from a `/repo-name/` subpath —
 no changes needed either way.
+
+Catalog update: bushing pricing is $35 shipped / $30 local pickup everywhere.
+Material pricing is dated September 14, 2026. The three refreshed product
+photos use .png paths. The old matching .jpg files are no longer referenced
+and can be removed from the repository. Keep product-installed.jpg.

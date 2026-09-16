@@ -440,3 +440,16 @@ p{ margin: 0 0 1.1em; color: var(--steel-300); max-width: 62ch; }
   .equipment-icon { flex-basis: 56px; width: 56px; height: 56px; }
   .equipment-heading { gap: 12px; }
 }
+
+/* Compact catalog cards open the full product page. */
+.shop-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 300px)); gap: 24px; align-items: stretch; }
+.shop-product-card { display: flex; flex-direction: column; color: inherit; text-decoration: none; border: 1px solid var(--hairline); border-radius: var(--radius-md); overflow: hidden; background: var(--asphalt-2); transition: border-color 150ms ease, transform 150ms ease; }
+.shop-product-card:hover { border-color: var(--violet-light); transform: translateY(-3px); }
+.shop-product-card:focus-visible { outline: 3px solid var(--violet-light); outline-offset: 4px; }
+.shop-product-card > img { width: 100%; height: 180px; object-fit: contain; background: #252322; }
+.shop-card-copy { display: flex; flex-direction: column; flex: 1; padding: 20px; align-items: flex-start; }
+.shop-card-copy h2 { font-size: 1.3rem; margin: 14px 0 10px; }
+.shop-card-price { font-weight: 600; }
+.shop-card-price span { display: block; font-size: .85rem; color: var(--steel-300); font-weight: 400; }
+.shop-card-action { margin-top: auto; padding-top: 8px; color: var(--violet-light); font-size: .9rem; font-weight: 600; }
+@media (max-width: 400px) { .shop-grid { grid-template-columns: minmax(0, 1fr); } }
