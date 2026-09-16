@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Equipment | NeoCAD</title>
+<meta name="description" content="The printer fleet, 3D scanner, and materials NeoCAD uses to design and print car parts and custom fittings.">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-nav">
+  <div class="container">
+    <a href="index.html" class="nav-logo"><img src="assets/img/logo-nav-dark.png" alt="NeoCAD"></a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="equipment.html" class="is-active">Equipment</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+    <div class="nav-right">
+      <button class="icon-btn" data-search-open aria-label="Search the site">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+      <button class="nav-burger" aria-label="Menu" aria-expanded="false">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-head">
+    <div class="container">
+      <p class="eyebrow">Equipment</p>
+      <h1 style="max-width:16ch;">What's actually running the shop</h1>
+      <p class="lede" style="font-size:1.05rem;">Five printers and a 3D scanner, each doing a different job. No single machine here is trying to do everything.</p>
+    </div>
+  </section>
+
+  <section class="section tight" id="printers">
+    <div class="container">
+      <div class="grid-2">
+
+        <div class="panel">
+          <h3>Bambu Lab A1</h3>
+          <dl class="spec-plate" style="border-top:none; margin-top:8px;">
+            <div><dt>Build volume</dt><dd>256 × 256 × 256mm</dd></div>
+            <div><dt>Hotend</dt><dd>All-metal, up to 300°C</dd></div>
+            <div><dt>Frame</dt><dd>Open, no active chamber heat</dd></div>
+          </dl>
+          <p style="margin-top:14px; font-size:0.92rem;">The general-purpose machine. Open-frame Cartesian design, handles most PLA and PETG work and quick fit-check prints.</p>
+        </div>
+
+        <div class="panel">
+          <h3>Bambu Lab P1P</h3>
+          <dl class="spec-plate" style="border-top:none; margin-top:8px;">
+            <div><dt>Build volume</dt><dd>256 × 256 × 256mm</dd></div>
+            <div><dt>Hotend</dt><dd>Direct-drive, up to 300°C</dd></div>
+            <div><dt>Motion</dt><dd>CoreXY, up to 500mm/s</dd></div>
+          </dl>
+          <p style="margin-top:14px; font-size:0.92rem;">Runs the flexible filament jobs — TPU prints go here, where the direct-drive extruder handles the material cleanly.</p>
+        </div>
+
+        <div class="panel">
+          <h3>Bambu Lab H2S</h3>
+          <dl class="spec-plate" style="border-top:none; margin-top:8px;">
+            <div><dt>Build volume</dt><dd>340 × 320 × 340mm</dd></div>
+            <div><dt>Hotend</dt><dd>Up to 350°C</dd></div>
+            <div><dt>Chamber</dt><dd>Actively heated, up to 65°C</dd></div>
+          </dl>
+          <p style="margin-top:14px; font-size:0.92rem;">Enclosed and heated, so it's the one that runs ABS, ASA, and the reinforced composite filaments that warp on an open printer.</p>
+        </div>
+
+        <div class="panel">
+          <h3>Bambu Lab H2C</h3>
+          <dl class="spec-plate" style="border-top:none; margin-top:8px;">
+            <div><dt>Build volume</dt><dd>~330 × 320 × 325mm</dd></div>
+            <div><dt>Hotend</dt><dd>Swappable, up to 350°C</dd></div>
+            <div><dt>Chamber</dt><dd>Actively heated, up to 65°C</dd></div>
+          </dl>
+          <p style="margin-top:14px; font-size:0.92rem;">Multi-hotend system built for multi-material and multi-color work, on the same enclosed, heated platform as the H2S.</p>
+        </div>
+
+        <div class="panel" style="grid-column: 1 / -1;">
+          <h3>Creality K1 Max</h3>
+          <dl class="spec-plate" style="border-top:none; margin-top:8px;">
+            <div><dt>Build volume</dt><dd>300 × 300 × 300mm</dd></div>
+            <div><dt>Hotend</dt><dd>Up to 300°C</dd></div>
+            <div><dt>Motion</dt><dd>Enclosed CoreXY, up to 600mm/s</dd></div>
+          </dl>
+          <p style="margin-top:14px; font-size:0.92rem;">The largest bed in the shop. This is what oversized parts and multi-piece plates run on, so a big job doesn't mean a split job.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section tight on-light" id="scanner">
+    <div class="container">
+      <div class="grid-2" style="align-items:center;">
+        <div>
+          <p class="eyebrow">Reverse engineering</p>
+          <h2 style="font-size:1.8rem;">Revopoint MetroY Pro</h2>
+          <p>Fitment parts don't get eyeballed. A part gets scanned first, so the model that comes out of CAD matches the real geometry — not a caliper-and-guess approximation.</p>
+          <dl class="spec-plate">
+            <div><dt>Scanning</dt><dd>Blue laser + structured light, 5 modes</dd></div>
+            <div><dt>Accuracy</dt><dd>Down to 0.02mm</dd></div>
+            <div><dt>Connection</dt><dd>Wireless, Wi-Fi 6 streaming</dd></div>
+            <div><dt>Extras</dt><dd>Dual-axis auto turntable</dd></div>
+          </dl>
+        </div>
+        <div class="panel" style="padding:0; overflow:hidden;">
+          <img src="assets/img/product-parts-compare.jpg" alt="Stock hardware and printed parts laid out for comparison and fitment checking">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <p class="eyebrow">Materials, by what they're for</p>
+      <h2 style="max-width:18ch;">Picking a material is picking a job, not a color</h2>
+      <div class="grid-3" style="margin-top:36px;">
+        <div class="panel">
+          <span class="index mono">PLA / PETG</span>
+          <p style="margin-bottom:0;">General-purpose. Fast, cheap, plenty strong for interior trim, brackets away from heat, and anything cosmetic.</p>
+        </div>
+        <div class="panel">
+          <span class="index mono">ABS / ASA</span>
+          <p style="margin-bottom:0;">Better heat and UV resistance than PLA — the pick for anything that lives outside or near warm engine-bay air.</p>
+        </div>
+        <div class="panel">
+          <span class="index mono">TPU</span>
+          <p style="margin-bottom:0;">Flexible and abrasion-resistant. Gaskets, bushings, anything that needs to flex or absorb an impact instead of cracking.</p>
+        </div>
+        <div class="panel">
+          <span class="index mono">Composite (CF / GF)</span>
+          <p style="margin-bottom:0;">Carbon- and glass-fiber-reinforced filament for parts that need to stay rigid under load, like mount inserts.</p>
+        </div>
+        <div class="panel">
+          <span class="index mono">PPA-CF</span>
+          <p style="margin-bottom:0;">The high-temperature option, for parts mounted closest to the engine or exhaust where ABS would eventually give up.</p>
+        </div>
+        <div class="panel" style="border-style:dashed;">
+          <span class="index mono">Not sure?</span>
+          <p style="margin-bottom:0;"><a href="pricing.html" style="color:var(--violet-light);">Check the pricing guide</a> or reach out — material choice is part of every quote conversation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <img src="assets/img/logo-nav-dark.png" alt="NeoCAD" class="footer-logo">
+        <p>CAD design and 3D-printed parts, built one order at a time out of a home shop. Cars first — but if it needs a bracket, it can probably get drawn.</p>
+        <span class="badge-soon">Etsy &amp; Shopify — coming soon</span>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="pricing.html">Pricing guide</a></li>
+          <li><a href="equipment.html">Equipment</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Order &amp; contact</h4>
+        <ul>
+          <li><a href="mailto:[email protected]">[email protected]</a></li>
+          <li><a href="#">Instagram — @neocad.prints</a></li>
+          <li><a href="#">TikTok — @neocad.prints</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Shipping</h4>
+        <ul>
+          <li>Printed &amp; shipped from the U.S.</li>
+          <li>Local pickup possible — ask</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 NeoCAD. Designed and printed by one person.</span>
+      <span>Built with plain HTML, CSS &amp; JS.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="search-overlay" id="search-overlay">
+  <div class="search-panel">
+    <div class="search-input-row">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input id="search-input" type="text" placeholder="Search products, pricing, equipment..." autocomplete="off">
+      <button class="search-close">Esc</button>
+    </div>
+    <div class="search-results" id="search-results"></div>
+  </div>
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
