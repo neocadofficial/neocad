@@ -413,3 +413,12 @@ p{ margin: 0 0 1.1em; color: var(--steel-300); max-width: 62ch; }
   position: absolute; left: -999px; top: 0; background: var(--violet); color: #fff; padding: 10px 16px; z-index: 200;
 }
 .skip-link:focus{ left: 12px; top: 12px; }
+
+/* Visible brand name beside the existing logo. */
+.nav-logo { flex-shrink: 0; gap: 10px; }
+.nav-wordmark { font-family: var(--font-sans); font-size: 1.35rem; font-weight: 800; letter-spacing: -0.04em; color: var(--steel-100); }
+@media (max-width: 480px) {
+  .nav-logo { gap: 8px; }
+  .nav-logo img { height: 36px; max-width: 88px; object-fit: contain; }
+  .nav-wordmark { font-size: 1.15rem; }
+}

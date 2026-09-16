@@ -18,21 +18,28 @@ assets/js/main.js    Nav, search, gallery, and the pricing estimator
 assets/img/          Logo + product photos
 ```
 
-## Before this goes live — things to fill in
+## September 2026 update — install into the existing repository
 
-Search the project for `EDIT` to find every spot marked, or just check this list:
+Copy this folder into the matching locations in your existing repository.
+Merge folders and keep your existing `assets/js/main.js`, which was not supplied.
+The six HTML pages, stylesheet, supplied images, and new pricing script are included.
+This is a drop-in update, not a complete standalone site archive.
 
-- [ ] **Contact info** — `hello@neocadprints.com` and the `@neocad.prints` Instagram/TikTok
-      handles are placeholders. They're in the footer of every page, plus the
-      order box on `shop.html`. Find-and-replace across all six HTML files.
-- [ ] **Fitment years/trims** — `shop.html` currently says "2013–2024 BRZ / FR-S / 86
-      (ZC6 / ZN6), manual transmission." Confirm this is right.
-- [ ] **Install time & lead time** — placeholder estimates on `shop.html`, marked with
-      `EDIT` comments.
-- [ ] **Blog bio** — the intro paragraph on `blog.html` is generic on purpose. Swap in
-      your own words (name is optional).
-- [ ] Swap the eyebrow tag / lede copy anywhere you want a more personal voice —
-      everything's plain text in the HTML, no templating to fight.
+The index footer is now shared across the six pages, with working
+email and Instagram links. Header logos now include bold NeoCAD text.
+Equipment illustrations are generic inline SVGs, not model-specific photos.
+
+Material rates round upward to whole cents per gram. The estimator uses the
+same rates and a $10 minimum before shipping and tax. It has separate element
+IDs so the original main.js estimator does not initialize on this page.
+Formula: material + 5% material markup + machine time, then 5% production
+contingency on that sum, plus hands-on labor; apply $10 minimum, add shipping.
+Dryer time and tax remain part of the confirmed quote, not this estimator.
+
+Before publishing, confirm the existing fitment years/chassis labels and
+3–5 business day lead time on shop.html. The blog post now shares the updated header and footer with correct relative links.
+Preview with the repository's original main.js before deploying to check
+navigation, search, gallery behavior, and pricing integration.
 
 ## Adding a new blog post later
 

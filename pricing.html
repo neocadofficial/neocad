@@ -16,7 +16,7 @@
 
 <header class="site-nav">
   <div class="container">
-    <a href="index.html" class="nav-logo"><img src="assets/img/logo-nav-dark.png" alt="NeoCAD"></a>
+    <a href="index.html" class="nav-logo"><img src="assets/img/logo-nav-dark.png" alt=""><strong class="nav-wordmark">NeoCAD</strong></a>
     <nav>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
@@ -49,22 +49,22 @@
   <section class="section tight" id="materials">
     <div class="container">
       <h2 style="font-size:1.6rem;">Materials on hand</h2>
-      <p style="margin-bottom:24px;">Priced per gram, using the spool cost divided by net filament weight. Whatever a job uses gets billed at these rates, plus a 5% material markup.</p>
+      <p style="margin-bottom:24px;">Priced per gram, using the spool cost divided by net filament weight and rounded up to the next whole cent. Whatever a job uses gets billed at these rates, plus a 5% material markup.</p>
       <table class="rate-table">
         <thead>
           <tr><th>Material</th><th>Category</th><th class="num">Spool</th><th class="num">$ / gram</th></tr>
         </thead>
         <tbody>
-          <tr><td>Bambu PLA Basic / Matte</td><td>PLA / PETG</td><td class="num">$19.99 / 1000g</td><td class="num">$0.01999</td></tr>
-          <tr><td>Bambu PETG / PETG HF</td><td>PLA / PETG</td><td class="num">$17.99–19.99 / 1000g</td><td class="num">$0.01799–0.01999</td></tr>
-          <tr><td>Overture ASA</td><td>ABS / ASA</td><td class="num">$19.99 / 1000g</td><td class="num">$0.01999</td></tr>
-          <tr><td>Bambu ABS</td><td>ABS / ASA</td><td class="num">$19.99 / 1000g</td><td class="num">$0.01999</td></tr>
-          <tr><td>SUNLU TPU 95A</td><td>TPU</td><td class="num">$30.99 / 1000g</td><td class="num">$0.03099</td></tr>
-          <tr><td>Elegoo TPU 72D</td><td>TPU</td><td class="num">$26.99 / 1000g</td><td class="num">$0.02699</td></tr>
-          <tr><td>Tinmorry TPU 95A</td><td>TPU</td><td class="num">$22.98 / 1000g</td><td class="num">$0.02298</td></tr>
-          <tr><td>Polymaker PET-CF17</td><td>Composite</td><td class="num">$24.99 / 500g</td><td class="num">$0.04998</td></tr>
-          <tr><td>iSANMATE ASA-GF</td><td>Composite</td><td class="num">$29.99 / 1000g</td><td class="num">$0.02999</td></tr>
-          <tr><td>Siraya Tech PPA-CF</td><td>High-temp</td><td class="num">$59.49 / 1000g</td><td class="num">$0.05949</td></tr>
+          <tr><td>Bambu PLA Basic / Matte</td><td>PLA / PETG</td><td class="num">$19.99 / 1000g</td><td class="num">$0.02</td></tr>
+          <tr><td>Bambu PETG / PETG HF</td><td>PLA / PETG</td><td class="num">$17.99–19.99 / 1000g</td><td class="num">$0.02</td></tr>
+          <tr><td>Overture ASA</td><td>ABS / ASA</td><td class="num">$19.99 / 1000g</td><td class="num">$0.02</td></tr>
+          <tr><td>Bambu ABS</td><td>ABS / ASA</td><td class="num">$19.99 / 1000g</td><td class="num">$0.02</td></tr>
+          <tr><td>SUNLU TPU 95A</td><td>TPU</td><td class="num">$30.99 / 1000g</td><td class="num">$0.04</td></tr>
+          <tr><td>Elegoo TPU 72D</td><td>TPU</td><td class="num">$26.99 / 1000g</td><td class="num">$0.03</td></tr>
+          <tr><td>Tinmorry TPU 95A</td><td>TPU</td><td class="num">$22.98 / 1000g</td><td class="num">$0.03</td></tr>
+          <tr><td>Polymaker PET-CF17</td><td>Composite</td><td class="num">$24.99 / 500g</td><td class="num">$0.05</td></tr>
+          <tr><td>iSANMATE ASA-GF</td><td>Composite</td><td class="num">$29.99 / 1000g</td><td class="num">$0.03</td></tr>
+          <tr><td>Siraya Tech PPA-CF</td><td>High-temp</td><td class="num">$59.49 / 1000g</td><td class="num">$0.06</td></tr>
         </tbody>
       </table>
       <p class="note" style="margin-top:16px;">Rates reviewed periodically — ask for current pricing on a specific material if it's not listed here.</p>
@@ -110,7 +110,7 @@
           <p class="note" style="margin:0;">5% material markup on top of raw filament cost.</p>
           <p class="note" style="margin:0;">5% production contingency on materials + machine time, to cover failed prints and re-runs.</p>
           <p class="note" style="margin:0;">$0.25/hour for shared dryer time on moisture-sensitive filaments.</p>
-          <p class="note" style="margin:0;">$5 minimum order before shipping and tax — nothing ships for less.</p>
+          <p class="note" style="margin:0;">$10 minimum order before shipping and tax — nothing ships for less.</p>
         </div>
       </div>
     </div>
@@ -122,48 +122,50 @@
       <h2 style="max-width:16ch;">Get a rough estimate</h2>
       <p style="margin-bottom:36px;">This runs the same formula as every quote that goes out. It won't be exact — every job still gets a real quote before anything gets printed — but it'll get you in the right neighborhood.</p>
 
-      <form id="estimator-form" class="estimator">
+      <form id="quote-estimator" class="estimator">
         <div>
           <div class="estimator-field">
-            <label for="est-material">Material</label>
-            <select id="est-material"></select>
+            <label for="quote-material">Material</label>
+            <select id="quote-material"></select>
           </div>
           <div class="estimator-field">
-            <label for="est-grams">Grams used (from slicer)</label>
-            <input type="number" id="est-grams" value="60" min="0" step="1">
+            <label for="quote-grams">Grams used (from slicer)</label>
+            <input type="number" id="quote-grams" value="60" min="0" step="1">
           </div>
           <div class="estimator-field">
-            <label for="est-machine">Print category (machine time)</label>
-            <select id="est-machine"></select>
+            <label for="quote-machine">Print category (machine time)</label>
+            <select id="quote-machine"></select>
           </div>
           <div class="estimator-field">
-            <label for="est-hours">Print hours</label>
-            <input type="number" id="est-hours" value="2.5" min="0" step="0.1">
+            <label for="quote-hours">Print hours</label>
+            <input type="number" id="quote-hours" value="2.5" min="0" step="0.1">
           </div>
           <div class="estimator-field">
-            <label for="est-service">Hands-on service</label>
-            <select id="est-service"></select>
+            <label for="quote-service">Hands-on service</label>
+            <select id="quote-service"></select>
           </div>
           <div class="estimator-field">
-            <label for="est-service-hours">Service hours</label>
-            <input type="number" id="est-service-hours" value="0" min="0" step="0.1">
+            <label for="quote-service-hours">Service hours</label>
+            <input type="number" id="quote-service-hours" value="0" min="0" step="0.1">
           </div>
           <div class="estimator-field">
-            <label for="est-shipping">Shipping ($, if known)</label>
-            <input type="number" id="est-shipping" value="0" min="0" step="0.5">
+            <label for="quote-shipping">Shipping ($, if known)</label>
+            <input type="number" id="quote-shipping" value="0" min="0" step="0.5">
           </div>
         </div>
 
         <div class="panel estimator-out">
-          <div class="line"><span>Materials</span><span id="out-materials" class="mono">$0.00</span></div>
-          <div class="line"><span>Material markup (5%)</span><span id="out-markup" class="mono">$0.00</span></div>
-          <div class="line"><span>Machine time</span><span id="out-machine" class="mono">$0.00</span></div>
-          <div class="line"><span>Production contingency (5%)</span><span id="out-contingency" class="mono">$0.00</span></div>
-          <div class="line"><span>Hands-on labor</span><span id="out-labor" class="mono">$0.00</span></div>
-          <div class="line"><span>Shipping</span><span id="out-shipping" class="mono">$0.00</span></div>
-          <div class="line total"><span>Estimated total</span><span id="out-total" class="mono">$0.00</span></div>
+          <div class="line"><span>Materials</span><span id="quote-out-materials" class="mono">$0.00</span></div>
+          <div class="line"><span>Material markup (5%)</span><span id="quote-out-markup" class="mono">$0.00</span></div>
+          <div class="line"><span>Machine time</span><span id="quote-out-machine" class="mono">$0.00</span></div>
+          <div class="line"><span>Production contingency (5%)</span><span id="quote-out-contingency" class="mono">$0.00</span></div>
+          <div class="line"><span>Hands-on labor</span><span id="quote-out-labor" class="mono">$0.00</span></div>
+          <div class="line"><span>Minimum order adjustment</span><span id="quote-out-minimum" class="mono">$0.00</span></div>
+          <div class="line"><span>Shipping</span><span id="quote-out-shipping" class="mono">$0.00</span></div>
+          <div class="line total"><span>Estimated total</span><span id="quote-out-total" class="mono">$0.00</span></div>
         </div>
       </form>
+      <p class="note">$10 minimum before shipping and tax. Dryer time, if needed, and applicable tax are confirmed with your final quote.</p>
     </div>
   </section>
 </main>
@@ -173,7 +175,7 @@
     <div class="footer-top">
       <div>
         <img src="assets/img/logo-nav-dark.png" alt="NeoCAD" class="footer-logo">
-        <p>CAD design and 3D-printed parts, built one order at a time out of a home shop. Cars first — but if it needs a bracket, it can probably get drawn.</p>
+        <p>CAD design and 3D-printed parts, built one order at a time out of a home shop. Cars first — but if it's an idea, it can be made.</p>
         <span class="badge-soon">Etsy &amp; Shopify — coming soon</span>
       </div>
       <div>
@@ -188,9 +190,8 @@
       <div>
         <h4>Order &amp; contact</h4>
         <ul>
-          <li><a href="mailto:[email protected]">[email protected]</a></li>
-          <li><a href="#">Instagram — @neocad.prints</a></li>
-          <li><a href="#">TikTok — @neocad.prints</a></li>
+          <li><a href="mailto:neocadofficial@gmail.com">neocadofficial@gmail.com</a></li>
+          <li><a href="https://www.instagram.com/neocadofficial/">Instagram — @neocadofficial</a></li>
         </ul>
       </div>
       <div>
@@ -202,8 +203,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>&copy; 2026 NeoCAD. Designed and printed by one person.</span>
-      <span>Built with plain HTML, CSS &amp; JS.</span>
+      <span>&copy; 2026 NeoCAD.</span>
     </div>
   </div>
 </footer>
@@ -220,5 +220,6 @@
 </div>
 
 <script src="assets/js/main.js"></script>
+<script src="assets/js/neocad-estimator.js"></script>
 </body>
 </html>
