@@ -27,7 +27,9 @@ This is a drop-in update, not a complete standalone site archive.
 
 The index footer is now shared across the six pages, with working
 email and Instagram links. Header logos now include bold NeoCAD text.
-Equipment illustrations are generic inline SVGs, not model-specific photos.
+Equipment uses compact, distinct stylized SVG icons (not model-specific photos).
+The homepage now features the Fusion design and S13 cupholder preview; the
+blog includes a clearly marked in-development S13 sneak peek.
 
 Material rates round upward to whole cents per gram. The estimator uses the
 same rates and a $10 minimum before shipping and tax. It has separate element
