@@ -26,7 +26,7 @@
 }
 .product-gallery .gallery-thumbs {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 10px;
 }
 .product-gallery .gallery-thumb {
@@ -45,3 +45,5 @@
   object-position: center !important;
   transform: none !important;
 }
+
+@media (max-width: 480px) { .product-gallery .gallery-thumbs { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
