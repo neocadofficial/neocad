@@ -23,7 +23,7 @@ assets/img/          Logo + product photos
 
 Copy this folder into the matching locations in your existing repository.
 Merge folders and keep your existing `assets/js/main.js`, which was not supplied.
-The seven HTML pages, stylesheet, supplied images, and new pricing script are included.
+The eight HTML pages, stylesheet, supplied images, and new pricing script are included.
 This is a drop-in update, not a complete standalone site archive.
 
 The index footer is now shared across the seven pages, with working
@@ -83,7 +83,21 @@ All the links in this project use relative paths, so it works the same
 whether it's served from a domain root or from a `/repo-name/` subpath —
 no changes needed either way.
 
-Catalog update: bushing pricing is $35 shipped / $30 local pickup everywhere.
+Current full-walled bushing pricing: $30 pickup / $37.50 shipped.
 Material pricing is dated September 14, 2026. The three refreshed product
 photos use .png paths. The old matching .jpg files are no longer referenced
 and can be removed from the repository. Keep product-installed.jpg.
+
+## September 22 pricing and product pages
+
+Upload the new assets/css/commerce.css and assets/js/product-pages.js together
+with the revised HTML and images. Keep your existing assets/js/main.js.
+Product galleries and option selectors use the new script. The product price
+and order link update when the option or delivery selection changes.
+
+Pickup prices: full-walled 95A / 72D race spec $30; half walls / half infill
+$25.00; visor holder $15. Add $7.50 continental U.S. shipping per order.
+The custom quote estimator offers pickup or continental U.S. shipping.
+Product details appear below the price and ordering controls. Related cards
+connect the two products sharing BRZ / FR-S / 86 fitment tags; holder fitment
+is first generation only. Three installed holder images have been added.

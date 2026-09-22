@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/commerce.css?v=20260922">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -149,8 +150,8 @@
             <input type="number" id="quote-service-hours" value="0" min="0" step="0.1">
           </div>
           <div class="estimator-field">
-            <label for="quote-shipping">Shipping ($, if known)</label>
-            <input type="number" id="quote-shipping" value="0" min="0" step="0.5">
+            <label for="quote-shipping">Delivery</label>
+            <select id="quote-shipping"><option value="0">Local pickup — free</option><option value="7.50" selected>Continental U.S. shipping — $7.50</option></select>
           </div>
         </div>
 
@@ -165,7 +166,7 @@
           <div class="line total"><span>Estimated total</span><span id="quote-out-total" class="mono">$0.00</span></div>
         </div>
       </form>
-      <p class="note">$10 minimum before shipping and tax. Dryer time, if needed, and applicable tax are confirmed with your final quote.</p>
+      <p class="note">$10 minimum before shipping and tax. Continental U.S. shipping is $7.50; ask for a quote for other destinations. Dryer time, if needed, and applicable tax are confirmed with your final quote.</p>
     </div>
   </section>
 </main>
@@ -197,8 +198,8 @@
       <div>
         <h4>Shipping</h4>
         <ul>
-          <li>Printed &amp; shipped from the U.S.</li>
-          <li>Local pickup possible — ask</li>
+          <li>Continental U.S. shipping: $7.50</li>
+          <li>Local pickup: free · other destinations: ask</li>
         </ul>
       </div>
     </div>
