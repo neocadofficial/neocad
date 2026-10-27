@@ -15,15 +15,17 @@
   document.querySelectorAll('[data-nc-buy]').forEach(box => {
     const variant = box.querySelector('[data-nc-variant]');
     const shipping = box.querySelector('[data-nc-shipping]');
+    const generation = box.querySelector('[data-nc-generation]');
     const update = () => {
       const base = Number(variant.value);
       const delivery = Number(shipping.value);
       box.querySelector('[data-nc-price]').textContent = money(base + delivery);
       box.querySelector('[data-nc-delivery]').textContent = delivery ? `${money(base)} + $7.50 continental U.S. shipping` : 'Local pickup · add $7.50 for continental U.S. shipping';
-      const body = `I'd like to order: ${box.dataset.product}\nOption: ${variant.selectedOptions[0].textContent}\nDelivery: ${shipping.selectedOptions[0].textContent}\nPrice: ${money(base + delivery)}\n\nPlease confirm availability and any applicable tax.`;
+      const body = `I'd like to order: ${box.dataset.product}${generation ? '\nVehicle generation: ' + generation.selectedOptions[0].textContent : ''}\nOption: ${variant.selectedOptions[0].textContent}\nDelivery: ${shipping.selectedOptions[0].textContent}\nPrice: ${money(base + delivery)}\n\nPlease confirm availability and any applicable tax.`;
       box.querySelector('[data-nc-order]').href = `mailto:neocadofficial@gmail.com?subject=${encodeURIComponent(box.dataset.product + ' order')}&body=${encodeURIComponent(body)}`;
     };
     variant.addEventListener('change', update);
+    if (generation) generation.addEventListener('change', update);
     shipping.addEventListener('change', update);
     update();
   });
